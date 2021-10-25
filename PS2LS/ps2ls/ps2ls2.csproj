@@ -71,8 +71,11 @@
       <HintPath>..\packages\OpenTK.GLControl.3.1.0\lib\net20\OpenTK.GLControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +84,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Adr\ActorSocket.cs" />
@@ -376,6 +382,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ps2ls.ico" />
+    <None Include="Resources\document-plus.png" />
     <None Include="Resources\arrow-right.png" />
     <None Include="Resources\arrow-left.png" />
     <None Include="Resources\materials_3.xml" />
@@ -419,10 +426,6 @@
     <ProjectReference Include="..\fmodNET\fmodNET.csproj">
       <Project>{d3a5783f-a596-4263-905d-255d59174818}</Project>
       <Name>fmodNET</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\fmodSTUDIO\fmodSTUDIO.csproj">
-      <Project>{48e17f7c-5d0d-4b69-8b66-045ebc820469}</Project>
-      <Name>fmodSTUDIO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
